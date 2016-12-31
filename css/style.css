@@ -1,0 +1,38 @@
+body{
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #2d3c49;
+}
+.logo-row {
+  padding: 10px;
+}
+.centered{
+  border-width: 0;
+}
+.text-muted{
+  color: #7d97ad;
+}
+
+.text-thin{
+  font-weight: 100;
+}
+
+hr.bold-line{
+  border-top: 5px solid #7d97ad;
+}
+.linkage{
+  color: #2d3c49;
+}
+.linkage:hover{
+  color: #2d3c49;
+  text-decoration: none;
+}
+.link-text:hover{
+  color: #02b3e4;
+}
+.backshadow{
+  padding:5px;
+}
+.backshadow:hover{
+  background-color: #eeeeee;
+}
