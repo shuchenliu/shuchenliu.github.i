@@ -31991,24 +31991,36 @@
 	'use strict';
 	
 	var React = __webpack_require__(2);
-	var Emorylogo = __webpack_require__(185);
+	var Logo = __webpack_require__(185);
 	var Myname = __webpack_require__(186);
-	
+	var FullRowImage = __webpack_require__(187);
 	module.exports = React.createClass({
 	  displayName: 'exports',
 	
 	  render: function render() {
 	    //    console.log(Emorylogo);
-	    //var icon = <Emorylogo className="col-sm-2 col-md-6 col-xs-2 logo-row" src="img/emory-logo.png" imgHeight="100" imgWidth="100"/>;
-	    var name = React.createElement(Myname, { className: 'col-sm-10 col-md-6 col-xs-10 logo-row text-right text-uppercase', name: 'Shuchen Liu', programmerTitle: 'A Full-Stack Programmer To Be' });
+	    var emoryicon = React.createElement(Logo, { className: 'col-sm-2 col-md-6 col-xs-2 logo-row', src: 'img/emory-logo.png', alt: 'Emory Logo' });
+	    var name = React.createElement(Myname, {
+	      className: 'col-sm-10 col-md-6 col-xs-10 logo-row text-right text-uppercase',
+	      textThin: 'text-thin',
+	      name: 'Shuchen Liu',
+	      programmerTitle: 'A Full-Stack Programmer To Be'
+	    });
+	
+	    var AtlantaImg = React.createElement(FullRowImage, {
+	      src: 'img/atl-skyline.jpeg',
+	      alt: 'Atlanta Skyline',
+	      floatText: 'Test' });
 	    return React.createElement(
 	      'div',
 	      { className: 'container' },
 	      React.createElement(
 	        'div',
 	        { className: 'row' },
+	        emoryicon,
 	        name
-	      )
+	      ),
+	      AtlantaImg
 	    );
 	  }
 	});
@@ -32029,7 +32041,7 @@
 	    return React.createElement(
 	      "div",
 	      { className: this.props.className },
-	      React.createElement("img", { width: this.prop.imgWidth, height: this.prop.imgHeight, src: this.props.src, className: this.props.src, alt: "emory-logo" })
+	      React.createElement("img", { width: "100", height: "100", src: this.props.src, className: this.props.src, alt: this.props.alt })
 	    );
 	  }
 	});
@@ -32048,16 +32060,40 @@
 	  render: function render() {
 	    return React.createElement(
 	      'div',
-	      { className: this.props.src },
+	      { className: this.props.className },
 	      React.createElement(
 	        'h1',
-	        null,
+	        { className: this.props.textThin },
 	        this.props.name
 	      ),
 	      React.createElement(
 	        'h4',
 	        null,
 	        this.props.programmerTitle
+	      )
+	    );
+	  }
+	});
+
+/***/ },
+/* 187 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(2);
+	
+	module.exports = React.createClass({
+	  displayName: 'exports',
+	
+	  render: function render() {
+	    return React.createElement(
+	      'div',
+	      { className: 'row' },
+	      React.createElement(
+	        'div',
+	        { className: 'col-xs-12 col-md-12 background' },
+	        React.createElement('img', { className: 'img-responsive', src: this.props.src, alt: this.props.alt })
 	      )
 	    );
 	  }
