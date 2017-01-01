@@ -31999,9 +31999,9 @@
 	
 	  render: function render() {
 	    //    console.log(Emorylogo);
-	    var emoryicon = React.createElement(Logo, { className: 'col-sm-2 col-md-6 col-xs-2 logo-row', src: 'img/emory-logo.png', alt: 'Emory Logo' });
+	    var emoryicon = React.createElement(Logo, { className: 'col-xs-2 col-sm-2 col-md-6 logo-row', src: 'img/emory-logo.png', alt: 'Emory Logo' });
 	    var name = React.createElement(Myname, {
-	      className: 'col-sm-10 col-md-6 col-xs-10 logo-row text-right text-uppercase',
+	      className: 'col-xs-10 col-sm-10 col-md-6 text-right text-uppercase logo-row',
 	      textThin: 'text-thin',
 	      name: 'Shuchen Liu',
 	      programmerTitle: 'A Full-Stack Programmer To Be'
@@ -32013,7 +32013,7 @@
 	      floatText: 'Test' });
 	    return React.createElement(
 	      'div',
-	      { className: 'container' },
+	      { className: 'container-fluid' },
 	      React.createElement(
 	        'div',
 	        { className: 'row' },
@@ -32041,7 +32041,7 @@
 	    return React.createElement(
 	      "div",
 	      { className: this.props.className },
-	      React.createElement("img", { width: "100", height: "100", src: this.props.src, className: this.props.src, alt: this.props.alt })
+	      React.createElement("img", { width: "100", height: "100", src: this.props.src, alt: this.props.alt })
 	    );
 	  }
 	});
@@ -32092,7 +32092,7 @@
 	      { className: 'row' },
 	      React.createElement(
 	        'div',
-	        { className: 'col-xs-12 col-md-12 background' },
+	        { className: 'col-xs-12 col-xs-12 col-md-12 background' },
 	        React.createElement('img', { className: 'img-responsive', src: this.props.src, alt: this.props.alt })
 	      )
 	    );

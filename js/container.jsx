@@ -5,10 +5,10 @@ var FullRowImage = require('./fullrowimage.jsx');
 module.exports = React.createClass({
   render: function() {
 //    console.log(Emorylogo);
-    var emoryicon = <Logo className="col-sm-2 col-md-6 col-xs-2 logo-row" src="img/emory-logo.png" alt="Emory Logo" />;
+    var emoryicon = <Logo className="col-xs-2 col-sm-2 col-md-6 logo-row" src="img/emory-logo.png" alt="Emory Logo" />;
     var name =
       <Myname
-        className="col-sm-10 col-md-6 col-xs-10 logo-row text-right text-uppercase"
+        className="col-xs-10 col-sm-10 col-md-6 text-right text-uppercase logo-row"
         textThin="text-thin"
         name="Shuchen Liu"
         programmerTitle="A Full-Stack Programmer To Be"
@@ -19,7 +19,7 @@ module.exports = React.createClass({
                       alt="Atlanta Skyline"
                       floatText="Test"/>;
     return(
-        <div className="container">
+        <div className="container-fluid">
           <div className="row">
             {emoryicon}
             {name}
