@@ -7,7 +7,18 @@ body{
   color: #2d3c49;
 }
 .logo-row {
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.logo{
+  margin-top: 5px;
+}
+.logo-element{
+  padding-left: -5px;
+  margin-right: 5px;
+}
+.logo-text{
+  margin-top: 15px;
 }
 .centered{
   border-width: 0;
@@ -38,4 +49,28 @@ hr.bold-line{
 }
 .backshadow:hover{
   background-color: #eeeeee;
+}
+.backgroudnImage{
+  position: relative;
+}
+.textClass{
+   position: absolute;
+   top: 200px;
+   width: 100%;
+}
+.spanClass{
+   color: white;
+   font: bold 24px/45px Helvetica, Sans-Serif;
+   letter-spacing: -1px;
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px;
+}
+
+.logo-wrap{
+  padding-left: 0;
+}
+
+.span-spacing{
+   padding:0 5px;
 }
