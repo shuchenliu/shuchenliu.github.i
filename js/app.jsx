@@ -80,7 +80,7 @@ var atl = <ImageWithTextBlock
           src='img/atl-skyline.jpeg'
           alt='Atlanta Skyline'
           text={
-            {list: ('Unemployed softwareengineer$desperately seeking a job').split('$')}
+            {list: ('We run things, $ things dont run we.').split('$')}
           }
           />;
 
